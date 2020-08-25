@@ -1,17 +1,15 @@
 <?php
 
-//As sample, we have added WPT plugins File
-$WPT_Module =  WP_PLUGIN_DIR . '/woo-product-table/woo-product-table.php';
-if( file_exists( $WPT_Module ) ){
-   include_once $WPT_Module;
+$plugins_for_actions = array(
+    'woo-product-table/woo-product-table.php',
+    'UltraTable/ultratable.php',
+);
+foreach( $plugins_for_actions as $plugin_loc ){
+    $UTA_Module =  WP_PLUGIN_DIR . '/' . $plugin_loc;
+    if( is_plugin_active( $plugin_loc ) && file_exists( $UTA_Module ) ){
+       include_once $UTA_Module;
+    }
 }
-//As sample, we have added UltraTable plugins File
-$UltraTAble_Module =  WP_PLUGIN_DIR . '/UltraTable/ultratable.php';
-if( file_exists( $UltraTAble_Module ) ){
-   include_once $UltraTAble_Module;
-}
 
-
-
-
+//add_action( 'your_action_hook_name', 'test_saiful' );
 //Write your action here
