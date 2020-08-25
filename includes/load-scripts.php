@@ -21,8 +21,8 @@ add_action( 'wp_enqueue_scripts', 'ultraaddons_addons_enqueue_scripts' );
 
 if( !function_exists( 'ultraaddons_addons_admin_enqueue_scripts' ) ){
     function ultraaddons_addons_admin_enqueue_scripts( ) {
-        wp_enqueue_style( 'ultraaddons-css', ULTRAADDONS_ADDONS_BASE_URL . 'assets/css/admin-common.css', array(), '1.0.0', 'all' );
-        wp_enqueue_style('ultraaddons-css');
+        wp_enqueue_style( 'ultraaddons-addons-css', ULTRAADDONS_ADDONS_BASE_URL . 'assets/css/admin-common.css', array(), '1.0.0', 'all' );
+        wp_enqueue_style('ultraaddons-addons-css');
 
         wp_enqueue_style( 'ultraaddons-addons-admin', ULTRAADDONS_ADDONS_BASE_URL . 'assets/css/admin-style.css', array(), '1.0.0', 'all' );
         wp_enqueue_script( 'ultraaddons-addons-admin', ULTRAADDONS_ADDONS_BASE_URL . 'assets/js/admin-script.js', array( 'jquery' ), '1.0.0', true );

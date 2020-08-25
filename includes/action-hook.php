@@ -11,7 +11,8 @@ $plugins_for_actions = array(
 foreach( $plugins_for_actions as $plugin_loc ){
     $UTA_Module =  WP_PLUGIN_DIR . '/' . $plugin_loc;
     if( is_plugin_active( $plugin_loc ) && file_exists( $UTA_Module ) ){
-       include_once $UTA_Module;
+       //include_once $UTA_Module;
+        //WPT_Product_Table::getInstance();
     }
 }
 
