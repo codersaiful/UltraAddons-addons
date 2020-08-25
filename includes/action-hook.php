@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * If you want to any new plugin as parent, which plugins action
+ * u want to add here, add as array value
+ * like previous
+ */
 $plugins_for_actions = array(
     'woo-product-table/woo-product-table.php',
     'UltraTable/ultratable.php',
