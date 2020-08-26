@@ -12,6 +12,14 @@
  * Tested up to:         5.4.2
  * WC requires at least: 3.7
  * WC tested up to:      4.4.1
+ * 
+ * ############## Customer Details #################
+ * Full Name: 
+ * Email: 
+ * Project 
+ * Ticket 
+ * Project: 
+ * OtherInfo: 
  */
 
 
